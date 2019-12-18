@@ -1,9 +1,17 @@
 ---
-title: Project Calico Documentation
+title: Project Calico Documentation Archives
 description: Home
 layout: docwithnav
 ---
+{% if site.archive %}
+<ul>
+  {% for version in site.data.archives %}
+<li><a href="/{{ version}}">{{ version }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
 <p>You are being redirected to the latest release of Calico Docs.</p>
 <script type="text/javascript">
 window.location = "introduction"
 </script>
+{% endif %}
