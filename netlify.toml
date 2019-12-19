@@ -27,3 +27,34 @@
   for = "/*.bash"
   [headers.values]
     content-type = "text/x-shellscript"
+
+[[redirects]]
+  from = "/master/*"
+  # TODO: update to master.docs.projectcalico.org
+  to = "https://calico-master.netlify.com/:splat"
+  status = 302
+
+[[redirects]]
+  # v3.11 is a temporary redirect because soon it will be on docs-archive
+  from = "/v3.11/*"
+  to = "/:splat"
+  status = 301
+
+[[redirects]]
+  # v3.11 is a temporary redirect because soon it will be on docs-archive
+  from = "/v3.10/*"
+  # TODO: update to archive.docs.projectcalico.org/
+  to = "https://calico-archive.netlify.com/v3.10/:splat"
+  status = 302
+
+[[redirects]]
+  from = "/v3.9/*"
+  # TODO: update to archive.docs.projectcalico.org/
+  to = "https://calico-archive.netlify.com/v3.9/:splat"
+  status = 302
+
+[[redirects]]
+  from = "/v3.8/*"
+  # TODO: update to archive.docs.projectcalico.org/
+  to = "https://calico-archive.netlify.com/v3.8/:splat"
+  status = 302
