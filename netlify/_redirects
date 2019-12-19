@@ -1,0 +1,14 @@
+# TODO: update to master.docs.projectcalico.org
+/master/* https://calico-master.netlify.com/:splat 302
+
+# v3.11 is a temporary redirect because soon it will be on docs-archive
+/v3.11/* /:splat 301
+
+# TODO: update to archive.docs.projectcalico.org/
+/v3.10/* https://calico-archive.netlify.com/v3.10/:splat 302
+
+# TODO: update to archive.docs.projectcalico.org/
+/v3.9/* https://calico-archive.netlify.com/v3.9/:splat 302
+
+# TODO: update to archive.docs.projectcalico.org/
+/v3.8/* https://calico-archive.netlify.com/v3.8/:splat 302
